@@ -27,6 +27,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
@@ -61,6 +64,42 @@
           font-size: 3.5rem;
         }
       }
+
+      .footer-dark {
+        padding:20px 0;
+        color:#f0f9ff;
+        background-color:#31373b;
+      }
+
+      .footer-dark h3 {
+        margin-top:10px;
+        margin-bottom:10px;
+        font-weight:bold;
+        font-size:15px;
+      }
+
+      @media (max-width:767px) {
+        .footer-dark .item:not(.social) {
+          text-align:center;
+          padding-bottom:0px;
+        }
+      }
+
+      .footer-dark .item.text {
+        margin-bottom:10px;
+      }
+
+      @media (max-width:767px) {
+        .footer-dark .item.text {
+          margin-bottom:0;
+        }
+      }
+
+      .footer-dark .item.text p {
+        opacity:0.6;
+        margin-bottom:0;
+      }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.3/examples/jumbotron/jumbotron.css" rel="stylesheet">
@@ -81,7 +120,7 @@
          <a class="nav-item nav-link" href="https://arxiv.org/abs/2109.00590" target="_blank">Paper</a>
          <a class="nav-item nav-link" href="https://github.com/WebQnA/WebQA" target="_blank">Data</a>
          <a class="nav-item nav-link" href="" target="_blank">Code (coming soon)</a>
-         <a class="nav-item nav-link" href="" target="_blank">Leaderboard (coming soon)</a>
+         <a class="nav-item nav-link" href="https://eval.ai/web/challenges/challenge-page/1255/overview" target="_blank">Leaderboard</a>
         </div>
       </div>
     </nav>
@@ -120,11 +159,13 @@
       </p>
       <p> <b>Competition Info: </b>To be included in the Neurips2021 Competition write-up, authors must provide a short explanation (~1 page) of what they did and what insights they discovered by <strong> <font color=red>Oct 29, 2021</font></strong>.
             Github links, if provided, will also be included in the Competition write-up for others to make extensions and look for improvements.
+            <b>Please <a href="https://mailman.srv.cs.cmu.edu/mailman/listinfo/webqa_challenge" target="_blank">subscribe</a> to our mailing list!</b>
       </p>
 
   <center>
   <p><a class="btn btn-primary btn-lg homeButton" href="https://arxiv.org/abs/2109.00590" role="button" target="_blank">Paper on ArXiv»</a> 
   <a class="btn btn-success btn-lg homeButton" href="https://github.com/WebQnA/WebQA" role="button" target="_blank">Data Download»</a> 
+  <a class="btn btn-warning btn-lg homeButton" href="https://eval.ai/web/challenges/challenge-page/1255/overview" role="button" target="_blank">Leaderboard»</a>
   </p>
   </center>
 
@@ -159,17 +200,28 @@
 
 </main>
 
-
-  <center><h4><a href="https://github.com/WebQnA/WebQA/blob/main/README.md#download-data" target="_blank">Data</a> is live! Leaderboard is coming (very) soon!</h4></center>
-
-<footer class="container">
-  <div id="groupContainer">
-      <img src="images/cmu.jpg" class="groupLogo">
-      <img src="images/microsoft.png" class="groupLogo">
-      <img src="images/bing.png" class="groupLogo">
-  </div>
-  <br>
-</footer>
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 item text">
+                <div id="groupContainer">
+                  <img src="images/cmu.jpg" class="groupLogo">
+                  <img src="images/microsoft.png" class="groupLogo">
+                  <img src="images/bing.png" class="groupLogo">
+                </div>
+            </div>
+              <div class="col-md-6 item text">
+                  <h3>Contact</h3>
+                  <p><span style="font-family:'Courier New'">{yingshac, ybisk}@cs.cmu.edu</span></p>
+                  <p><a href="https://mailman.srv.cs.cmu.edu/mailman/listinfo/webqa_challenge" target="_blank">Subscribe</a> to our mailing list</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
